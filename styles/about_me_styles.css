@@ -1,0 +1,18 @@
+body {
+	background-color: #D46A6A;
+}
+
+p {
+	margin: 100px;
+	margin-right: 200px;
+}
+
+#infos {
+	text-indent: 60px;
+	font-size: 130%;
+	color: black;
+}
+
+p img {
+	margin-right: 100px;
+}
