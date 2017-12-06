@@ -4,10 +4,7 @@ function frame(idNumber, title, content){
 	return frame;
 }
 
-
-
-
-
+var content = "";
 
 
 
