@@ -7,7 +7,7 @@
 			body {background-color: #D46A6A;}
             div  {text-align: center;}
             b    {font-size: 25px;}
-            p    {font-size: 17px; margin-right: 100px; margin-left: 100px;}
+            p    {font-size: 17px; margin-right: 150px; margin-left: 150px;}
 		</style>
      </head>
 
