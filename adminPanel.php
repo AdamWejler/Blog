@@ -38,7 +38,7 @@ echo '
 
 // Remove posts
 echo '
-		<br><br>
+		<br><br><br><br><br><br>
 		<form action="removepost.php" method="POST" id="removepostform">
 			<fieldset>
 				<legend>Usuwanie postów:</legend>
@@ -49,10 +49,15 @@ echo '
         </form>
 ';
 
+if(isset($_SESSION['emptyfield_nr'])){
+	echo '<p>Numer posta do usunięcia nie został podany!</p>';
+	unset($_SESSION['emptyfield_nr']);
+}
+
 // Update post
 echo '
 
-		<br><br>
+		<br><br><br><br><br><br>
 		<fieldset>
 			<legend>Edycja postów</legend>
 
@@ -74,25 +79,6 @@ echo '
 		</fieldset>
 
 ';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
 else{

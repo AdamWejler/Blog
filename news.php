@@ -34,12 +34,9 @@
         // Reading posts from database
         try{
             $pdo = connect();
-            $stmt = $pdo -> query('SELECT * FROM posts');
+            $stmt = $pdo -> query('SELECT * FROM posts ORDER BY id DESC');
             $posts = $stmt -> fetchAll();
             //echo 'Success';
-
-
-
 
             foreach ($posts as $r) {
                 $title = json_encode($r['title']);
@@ -56,30 +53,6 @@
                         document.getElementById("newslist").innerHTML = content;
                     </script>
                 ';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         }
         catch(PDOException $e)
         {
